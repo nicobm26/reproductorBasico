@@ -1,0 +1,116 @@
+:root{
+    --color-fondo: #e1dac6;
+    --color-reprodutor: #726f59;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-fondo);
+    font-size: 16.5px;
+}
+
+p{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.bg{
+    display: grid;
+    place-items: center center;
+    height: 100vh;
+}
+
+.reproductor{
+    background-color: var(--color-reprodutor);
+    display: flex;
+    flex-direction: column;
+    padding: 2.1rem 2.7rem 2rem 2.1rem;
+    border-radius: 3rem;
+    gap: 3.1rem;
+    align-items: center;
+    width: 90%;
+}
+@media (min-width: 768px) {
+    .reproductor{
+        background-color: var(--color-reprodutor);
+        display: flex;
+        padding: 2.1rem 2.7rem 2rem 2.1rem;
+        border-radius: 3rem;
+        gap: 3.1rem;
+        width: 50.1rem;
+        height: 19.8rem;
+        flex-direction: row;
+        align-items: normal;
+    }
+}
+
+
+.informacion{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+@media (min-width: 768px) {
+    .informacion{
+        justify-items: normal;
+    }
+}
+
+.boton{
+    color: black;
+    cursor: pointer;
+}
+
+.espaciadoBotones{
+    margin-right: 1.1rem;
+}
+
+.informacion__botones{
+    display: flex;
+    margin-bottom: 2.1rem;
+}
+.botonVolumen{
+    display: flex;
+}
+
+.informacion__cancion__titulo{
+    font-weight: 500;
+    color: #d4cdb9;
+    margin-bottom: 0.1rem;
+    font-size: 2rem;
+}
+
+.informacion__cancion__track{
+    font-weight: 300;
+    color: #a09b86;
+    font-size: 1.5rem;
+    margin-bottom: 2.6rem;
+}
+
+input[type='range'] {
+    /* overflow: hidden; */
+    /* -webkit-appearance: none; */
+    width: 80px;
+    background-color: var(--color-fondo);
+    accent-color: var(--color-fondo);
+}
+
+.volumen{
+    display: none;
+}
+.ver{
+    display: block;
+}
+
+#flujo{
+    width: 26.1rem;
+}

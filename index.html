@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="fonts/Poppins-Light.ttf">
+</head>
+<body>
+    <div class="bg">
+        <section class="reproductor">
+            <div>
+                <img src="images/cover.png" alt="Foto del Album">
+            </div>
+            <div class="informacion">
+                <div class="informacion__cancion">
+                    <p class="informacion__cancion__titulo">Album Rock</p>
+                    <p class="informacion__cancion__track">Track 01 - Song Rock</p>
+                </div>
+                <div class="informacion__botones">
+                    <div class="boton espaciadoBotones" id="play">
+                        <img src="images/btn-play.svg" alt="Boton Play">
+                    </div>
+                    <div class="boton espaciadoBotones" id="pausa"> 
+                        <img src="images/btn-pause.svg" alt="Boton Pausa">
+                    </div>
+                    <div class="boton botonVolumen" id="volumen">
+                        <img src="images/btn-volume.svg" alt="Boton Volumen">
+                        <input type="range"  max="1" min="0" step="0.1" class="volumen" id="barraVolumen">
+                    </div>
+                </div>
+                <div class="informacion__tiempo">
+                    <input type="range" class="flujo" id="flujo">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/audio.js"></script>
+</body>
+</html>
